@@ -1,0 +1,5 @@
+2026-10-15 16:17:31,531 - data_ingestion - ERROR - Failed to complete the data ingestion process: HTTP Error 404: Not Found
+2026-10-15 16:17:58,367 - data_ingestion - ERROR - Failed to complete the data ingestion process: HTTP Error 404: Not Found
+2026-10-15 16:18:35,328 - data_ingestion - ERROR - Failed to complete the data ingestion process: HTTP Error 404: Not Found
+2026-10-15 16:19:58,322 - data_ingestion - ERROR - Missing column in the dataframe: 'clean_comment'
+2026-10-15 16:19:58,322 - data_ingestion - ERROR - Failed to complete the data ingestion process: 'clean_comment'

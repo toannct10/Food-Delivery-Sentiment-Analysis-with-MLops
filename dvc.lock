@@ -1,0 +1,39 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/data/data_ingestion.py
+    deps:
+    - path: src/data/data_ingestion.py
+      hash: md5
+      md5: 678b00206a5f01ccb95b95229977af95
+      size: 4287
+    params:
+      params.yaml:
+        data_ingestion.test_size: 0.2
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 24fd27904825735a8c4f993f4712840a.dir
+      size: 2064558
+      nfiles: 2
+  data_preprocessing:
+    cmd: python src/data/data_preprocessing.py
+    deps:
+    - path: data/raw/test.csv
+      hash: md5
+      md5: d893e3845a27eaae287a01e4052ef8bd
+      size: 415184
+    - path: data/raw/train.csv
+      hash: md5
+      md5: e4329e33c46b6d038c26b1c9da59b621
+      size: 1649374
+    - path: src/data/data_preprocessing.py
+      hash: md5
+      md5: 1f57eb3fb3c72f97e94c27302818a9de
+      size: 3780
+    outs:
+    - path: data/interim
+      hash: md5
+      md5: e59e8f9ce2f420069940b60031076243.dir
+      size: 2064086
+      nfiles: 2
