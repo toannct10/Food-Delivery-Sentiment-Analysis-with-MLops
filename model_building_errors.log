@@ -1,0 +1,2 @@
+2026-10-15 17:14:03,272 - model_building - ERROR - Error during LightGBM model training: check_X_y() got an unexpected keyword argument 'force_all_finite'
+2026-10-15 17:14:03,273 - model_building - ERROR - Failed to complete the feature engineering and model building process: check_X_y() got an unexpected keyword argument 'force_all_finite'

@@ -1,0 +1,2 @@
+2026-10-15 17:28:59,908 - model_evaluation - ERROR - Failed to complete model evaluation: name 'load_params' is not defined
+2026-10-15 17:35:00,354 - model_evaluation - ERROR - Failed to complete model evaluation: 'clean_comment'
